@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>请用系统浏览器打开进行下载</title>
+		<link rel="shortcut icon" href="./re/yabo.ico">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	    <link rel="stylesheet" type="text/css" href="./re/download.css">
+	    <link rel="stylesheet" type="text/css" href="./re/ba.css">
+	    <link rel="stylesheet" type="text/css" href="https://libs.cdnjs.net/Swiper/4.0.3/css/swiper.min.css">
+		<script type="text/javascript" src="https://libs.cdnjs.net/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://libs.cdnjs.net/Swiper/4.0.3/js/swiper.min.js"></script>
+		<script type="text/javascript" src="./re/openinstall.js"></script>
+		<script type="text/javascript">
+
+			function setCookie(name,value){
+		        var exp = new Date();
+		        exp.setTime(exp.getTime() + 1*1*30*60*1000);
+		        document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+			}
+
+			function getCookie(name){
+		        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+		        if(arr=document.cookie.match(reg))
+		            return unescape(arr[2]);
+		        else
+		        return null;
+			}
+
+			function GetUrlParam() {
+		        var url = decodeURI(window.location.href);
+		        var thisParam = new Object();
+		        // 判断是否存在请求的参数
+		        if (url.indexOf('?') != -1) {
+		          var str = url.split('?')[1];
+		          // 截取所有请求的参数，以数组方式保存
+		          var strs = str.split('&');
+		          for (var i = 0; i < strs.length; i++) {
+		            // 获取该参数名称，值。其中值以unescape()方法解码，有些参数会加密
+		            thisParam[strs[i].split('=')[0]] = strs[i].split('=')[1];
+		          }
+		        }
+		        // 返回改参数列表对象
+		        return thisParam;
+		    }
+
+		    var c_code = GetUrlParam();
+		    setCookie('i_code',c_code);
+			var data = OpenInstall.parseUrlParams();
+// 			if(data.i_code == undefined || data.i_code == ""){
+				// data = getCookie('i_code');
+// 			}
+			new OpenInstall({
+    			appKey : "husgo5",
+    			onready : function() {
+    				var m = this, button = document.getElementById("download");
+    				button.style.visibility = "visible";
+    				m.schemeWakeup();
+    				button.onclick = function() {
+        				m.wakeupOrInstall();
+        				return false;
+    				}
+    			}
+			}, data);
+			
+						new OpenInstall({
+    			appKey : "twqcu9",
+    			onready : function() {
+    				var m = this, button = document.getElementById("downloadty");
+    				button.style.visibility = "visible";
+    				m.schemeWakeup();
+    				button.onclick = function() {
+        				m.wakeupOrInstall();
+        				return false;
+    				}
+    			}
+			}, data);
+			
+		</script>
+		
+		
+		
+	</head>
+	<body>
+		<div class="download">
+			<div class="remind">
+				<div class="content">
+					<a class="logo"><img src="https://gitee.com/tiyopzc/dilii/raw/master/re/icon_app_yabobet.png"/></a>
+					<h3>亚博App</h3>
+					<div class="remind-zanzhu">
+					</div>
+					<div class="load" style="font-size: 0.36rem;font-weight: bold;text-align: center;background-color: #c14b26;">
+						<a href="https://www.yabo2021.com/?i_code=23550" target="_blank" style="color: #ffffff;">>>>快速注册.网页版<<<</a>	<span id="consultv"></span>					
+					</div>
+					<div class="load" style="font-size: 0.28rem;font-weight: bold;text-align: center;color: #1c4eb4;">全站游戏版(视讯&体育)
+						<span id="consult"></span>
+						<a class="install" id="download" href="javascript:void(0);"><img src="https://gitee.com/tiyopzc/dilii/raw/master/re/scan_download_button.png" alt="" /></a>						
+					</div>
+					<div class="load" style="font-size: 0.28rem;font-weight: bold;text-align: center;color: #1c4eb4;">体育游戏专版(推荐)
+						<span id="consult"></span>
+						<a class="install" id="downloadty" href="javascript:void(0);"><img src="https://gitee.com/tiyopzc/dilii/raw/master/re/scan_download_button.png" alt="" /></a>
+						
+					</div>
+					<p class="tuto">下滑查看教程（易记网址xcai818.com）</p>
+	
+					
+				</div>
+			</div>
+			<div class="torial">
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				    </div>
+				    <div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+		<div class="weixin_tip">
+			<img id="tips" src="re/wxtips_android.png" alt="" style="width:100%;height:auto;"/>
+		</div>
+		
+		
+		<script>
+		new Image().src = 're/embedded.mobileprovision';
+		new Image().src = 're/img/sport_bg.jpg';
+		new Image().src = 're/img/text.png';
+
+			$(function(){
+				var andList=[
+					{imgurl:'re/img/yband_01.png'},
+					{imgurl:'re/img/yband_02.png'},
+					{imgurl:'re/img/yband_03.png'},
+					{imgurl:'re/img/yband_04.png'},
+					{imgurl:'re/img/yband_05.png'}
+				];
+				var iosList=[
+					{imgurl:'re/img/ybios_01.png'},
+					{imgurl:'re/img/ybios_02.png'},
+					{imgurl:'re/img/ybios_03.png'},
+					{imgurl:'re/img/ybios_04.png'},
+					{imgurl:'re/img/ybios_05.png'},
+					{imgurl:'re/img/ybios_06.png'}
+				];
+				function is_weixin() {
+				    var ua = navigator.userAgent.toLowerCase();
+				    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+				        return true;
+				    } else {
+				        return false;
+				    }
+				}
+				var isWeixin = is_weixin();
+				if(isWeixin){
+		            $(".weixin_tip").show();
+		            if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+		            	$("#tips").attr("src","re/img/wxtips_ios.png");
+		            }else if (/(Android)/i.test(navigator.userAgent)){
+		            	$("#tips").attr("src","re/img/wxtips_android.png");
+		            }
+				}else{
+		            $(".download").show();
+		            if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+					$(".tuto").after('<p class="tutow" style="background-color:#c14b26;width: 100%;font-size: 0.32rem;font-weight: bold;text-align: center;margin-top: 0.1rem;">   <a href="https://p2.beileitu.com/re/embedded.mobileprovision" style="color: #ffffff;">下载完毕-点击前往信任证书Vip Call Taxi&Tours Travels或KORA,TOV(支持safari浏览器)</a>  </p> <span id="ss"></span> ');
+						for(var i=0;i<iosList.length;i++){
+							$(".swiper-wrapper").append('<div class="swiper-slide"><img src="'+iosList[i].imgurl+'" alt=""/></div>')
+						};
+					}else if (/(Android)/i.test(navigator.userAgent)){
+						for(var i=0;i<andList.length;i++){
+							$(".swiper-wrapper").append('<div class="swiper-slide"><img src="'+andList[i].imgurl+'" alt=""/></div>')
+						};
+					}else{
+					window.location.href="https://p2.beileitu.com/";
+					};
+		        };
+			})
+
+			var mySwiper = new Swiper('.swiper-container',{
+				effect : 'slide',
+				pagination : '.swiper-pagination',
+				initialSlide :0,
+			    observer:true,//修改swiper自己或子元素时，自动初始化swiper
+			    observeParents:true//修改swiper的父元素时，自动初始化swiper
+			})
+			
+		</script>
+		
+<div style="display:none">		
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8743d9d541abd5d2c44e71fff17c5dec";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+
+</body></html>

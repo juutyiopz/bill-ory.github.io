@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html><head>
+ 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>请用系统浏览器打开进行下载</title>
+<script type="text/javascript">if(window.top!== window.self){top.location=self.location;}</script>
+		<link rel="shortcut icon" href="./re/yabo.ico">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	    <link rel="stylesheet" type="text/css" href="./re/download.css">
+	    <link rel="stylesheet" type="text/css" href="./re/ba.css">
+ 		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/Swiper/4.4.6/css/swiper.min.css">
+ 		<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+		
+		<script type="text/javascript" src="https://cdn.staticfile.org/Swiper/4.4.6/js/swiper.min.js"></script>
+		<script type="text/javascript" src="https://gitee.com/tiyopzc/dilii/raw/master/re/openinstall.js"></script>
+		<script type="text/javascript">
+			document.domain="beileitu.com";
+			function setCookie(name,value){
+		        var exp = new Date();
+		        exp.setTime(exp.getTime() + 1*1*30*60*1000);
+		        document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+			}
+
+			function getCookie(name){
+		        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+		        if(arr=document.cookie.match(reg))
+		            return unescape(arr[2]);
+		        else
+		        return null;
+			}
+
+			function GetUrlParam() {
+		        var url = decodeURI(window.location.href);
+		        var thisParam = new Object();
+		        // 判断是否存在请求的参数
+		        if (url.indexOf('?') != -1) {
+		          var str = url.split('?')[1];
+		          // 截取所有请求的参数，以数组方式保存
+		          var strs = str.split('&');
+		          for (var i = 0; i < strs.length; i++) {
+		            // 获取该参数名称，值。其中值以unescape()方法解码，有些参数会加密
+		            thisParam[strs[i].split('=')[0]] = strs[i].split('=')[1];
+		          }
+		        }
+		        // 返回改参数列表对象
+		        return thisParam;
+		    }
+
+		    var c_code = GetUrlParam();
+		    setCookie('i_code',c_code);
+			var data = OpenInstall.parseUrlParams();
+// 			if(data.i_code == undefined || data.i_code == ""){
+				// data = getCookie('i_code');
+// 			}
+			new OpenInstall({
+    			appKey : "husgo5",
+    			onready : function() {
+    				var m = this, button = document.getElementById("download");
+    				button.style.visibility = "visible";
+    				m.schemeWakeup();
+    				button.onclick = function() {
+        				m.wakeupOrInstall();
+        				return false;
+    				}
+    			}
+			}, data);
+			
+						new OpenInstall({
+    			appKey : "twqcu9",
+    			onready : function() {
+    				var m = this, button = document.getElementById("downloadty");
+    				button.style.visibility = "visible";
+    				m.schemeWakeup();
+    				button.onclick = function() {
+        				m.wakeupOrInstall();
+        				return false;
+    				}
+    			}
+			}, data);
+			
+		</script>
+		
+		
+		
+	</head>
+	<body>
+
+<script>
+var __encode ='sojson.com', _0xb483=["\x5F\x64\x65\x63\x6F\x64\x65","\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x73\x6F\x6A\x73\x6F\x6E\x2E\x63\x6F\x6D\x2F\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x6F\x62\x66\x75\x73\x63\x61\x74\x6F\x72\x2E\x68\x74\x6D\x6C"];(function(_0xd642x1){_0xd642x1[_0xb483[0]]= _0xb483[1]})(window);var __Ox47154=["\x09\x09\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x64\x6F\x77\x6E\x6C\x6F\x61\x64\x22\x3E","\x77\x72\x69\x74\x65\x6C\x6E","\x09\x09\x09\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x6D\x69\x6E\x64\x22\x3E","\x09\x09\x09\x09\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x6F\x6E\x74\x65\x6E\x74\x22\x3E","\x09\x09\x09\x09\x09\x3C\x61\x20\x63\x6C\x61\x73\x73\x3D\x22\x6C\x6F\x67\x6F\x22\x3E\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x65\x65\x2E\x63\x6F\x6D\x2F\x74\x69\x79\x6F\x70\x7A\x63\x2F\x64\x69\x6C\x69\x69\x2F\x72\x61\x77\x2F\x6D\x61\x73\x74\x65\x72\x2F\x72\x65\x2F\x69\x63\x6F\x6E\x5F\x61\x70\x70\x5F\x79\x61\x62\x6F\x62\x65\x74\x2E\x70\x6E\x67\x22\x2F\x3E\x3C\x2F\x61\x3E","\x09\x09\x09\x09\x09\x3C\x68\x33\x3E\u4E9A\u535A\x41\x70\x70\x3C\x2F\x68\x33\x3E","\x09\x09\x09\x09\x09\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x6D\x69\x6E\x64\x2D\x7A\x61\x6E\x7A\x68\x75\x22\x3E","\x09\x09\x09\x09\x09\x3C\x2F\x64\x69\x76\x3E","\x09\x09\x09\x09\x09\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6C\x6F\x61\x64\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x20\x30\x2E\x33\x36\x72\x65\x6D\x3B\x66\x6F\x6E\x74\x2D\x77\x65\x69\x67\x68\x74\x3A\x20\x62\x6F\x6C\x64\x3B\x74\x65\x78\x74\x2D\x61\x6C\x69\x67\x6E\x3A\x20\x63\x65\x6E\x74\x65\x72\x3B\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x63\x6F\x6C\x6F\x72\x3A\x20\x23\x63\x31\x34\x62\x32\x36\x3B\x22\x3E","\x09\x09\x09\x09\x09\x09\x3C\x61\x20\x68\x72\x65\x66\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x79\x61\x62\x6F\x32\x30\x31\x37\x2E\x63\x6F\x6D\x2F\x3F\x69\x5F\x63\x6F\x64\x65\x3D\x32\x33\x35\x35\x30\x22\x20\x74\x61\x72\x67\x65\x74\x3D\x22\x5F\x62\x6C\x61\x6E\x6B\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x63\x6F\x6C\x6F\x72\x3A\x20\x23\x66\x66\x66\x66\x66\x66\x3B\x22\x3E\x3E\x3E\x3E\u5FEB\u901F\u6CE8\u518C\x2E\u7F51\u9875\u7248\x3C\x3C\x3C\x3C\x2F\x61\x3E\x09\x3C\x73\x70\x61\x6E\x20\x69\x64\x3D\x22\x63\x6F\x6E\x73\x75\x6C\x74\x76\x22\x3E\x3C\x2F\x73\x70\x61\x6E\x3E\x09\x09\x09\x09\x09","\x09\x09\x09\x09\x09\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6C\x6F\x61\x64\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x20\x30\x2E\x32\x38\x72\x65\x6D\x3B\x66\x6F\x6E\x74\x2D\x77\x65\x69\x67\x68\x74\x3A\x20\x62\x6F\x6C\x64\x3B\x74\x65\x78\x74\x2D\x61\x6C\x69\x67\x6E\x3A\x20\x63\x65\x6E\x74\x65\x72\x3B\x63\x6F\x6C\x6F\x72\x3A\x20\x23\x31\x63\x34\x65\x62\x34\x3B\x22\x3E\u5168\u7AD9\u6E38\u620F\u7248\x28\u89C6\u8BAF\x26\u4F53\u80B2\x29","\x09\x09\x09\x09\x09\x09\x3C\x73\x70\x61\x6E\x20\x69\x64\x3D\x22\x63\x6F\x6E\x73\x75\x6C\x74\x22\x3E\x3C\x2F\x73\x70\x61\x6E\x3E","\x09\x09\x09\x09\x09\x09\x3C\x61\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x73\x74\x61\x6C\x6C\x22\x20\x69\x64\x3D\x22\x64\x6F\x77\x6E\x6C\x6F\x61\x64\x22\x20\x68\x72\x65\x66\x3D\x22\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x3A\x76\x6F\x69\x64\x28\x30\x29\x3B\x22\x3E\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x65\x65\x2E\x63\x6F\x6D\x2F\x74\x69\x79\x6F\x70\x7A\x63\x2F\x64\x69\x6C\x69\x69\x2F\x72\x61\x77\x2F\x6D\x61\x73\x74\x65\x72\x2F\x72\x65\x2F\x73\x63\x61\x6E\x5F\x64\x6F\x77\x6E\x6C\x6F\x61\x64\x5F\x62\x75\x74\x74\x6F\x6E\x2E\x70\x6E\x67\x22\x20\x61\x6C\x74\x3D\x22\x22\x20\x2F\x3E\x3C\x2F\x61\x3E\x09\x09\x09\x09\x09\x09","\x09\x09\x09\x09\x09\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6C\x6F\x61\x64\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x20\x30\x2E\x32\x38\x72\x65\x6D\x3B\x66\x6F\x6E\x74\x2D\x77\x65\x69\x67\x68\x74\x3A\x20\x62\x6F\x6C\x64\x3B\x74\x65\x78\x74\x2D\x61\x6C\x69\x67\x6E\x3A\x20\x63\x65\x6E\x74\x65\x72\x3B\x63\x6F\x6C\x6F\x72\x3A\x20\x23\x31\x63\x34\x65\x62\x34\x3B\x22\x3E\u4F53\u80B2\u6E38\u620F\u4E13\u7248\x28\u63A8\u8350\x29","\x09\x09\x09\x09\x09\x09\x3C\x61\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x73\x74\x61\x6C\x6C\x22\x20\x69\x64\x3D\x22\x64\x6F\x77\x6E\x6C\x6F\x61\x64\x74\x79\x22\x20\x68\x72\x65\x66\x3D\x22\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x3A\x76\x6F\x69\x64\x28\x30\x29\x3B\x22\x3E\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x65\x65\x2E\x63\x6F\x6D\x2F\x74\x69\x79\x6F\x70\x7A\x63\x2F\x64\x69\x6C\x69\x69\x2F\x72\x61\x77\x2F\x6D\x61\x73\x74\x65\x72\x2F\x72\x65\x2F\x73\x63\x61\x6E\x5F\x64\x6F\x77\x6E\x6C\x6F\x61\x64\x5F\x62\x75\x74\x74\x6F\x6E\x2E\x70\x6E\x67\x22\x20\x61\x6C\x74\x3D\x22\x22\x20\x2F\x3E\x3C\x2F\x61\x3E","\x09\x09\x09\x09\x09\x09","\x09\x09\x09\x09\x09\x3C\x70\x20\x63\x6C\x61\x73\x73\x3D\x22\x74\x75\x74\x6F\x22\x3E\u4E0B\u6ED1\u67E5\u770B\u6559\u7A0B\uFF08\u6613\u8BB0\u7F51\u5740\x78\x63\x61\x69\x38\x31\x38\x2E\x63\x6F\x6D\uFF09\x3C\x2F\x70\x3E","\x09","\x09\x09\x09\x09\x09","\x09\x09\x09\x09\x3C\x2F\x64\x69\x76\x3E","\x09\x09\x09\x3C\x2F\x64\x69\x76\x3E","\x09\x09\x09\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x74\x6F\x72\x69\x61\x6C\x22\x3E","\x09\x09\x09\x09\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x73\x77\x69\x70\x65\x72\x2D\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72\x22\x3E","\x09\x09\x09\x09\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x73\x77\x69\x70\x65\x72\x2D\x77\x72\x61\x70\x70\x65\x72\x22\x3E","\x09\x09\x09\x09\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E","\x09\x09\x09\x09\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x73\x77\x69\x70\x65\x72\x2D\x70\x61\x67\x69\x6E\x61\x74\x69\x6F\x6E\x22\x3E\x3C\x2F\x64\x69\x76\x3E","\x09\x09\x3C\x2F\x64\x69\x76\x3E"];document[__Ox47154[0x1]](__Ox47154[0x0]);document[__Ox47154[0x1]](__Ox47154[0x2]);document[__Ox47154[0x1]](__Ox47154[0x3]);document[__Ox47154[0x1]](__Ox47154[0x4]);document[__Ox47154[0x1]](__Ox47154[0x5]);document[__Ox47154[0x1]](__Ox47154[0x6]);document[__Ox47154[0x1]](__Ox47154[0x7]);document[__Ox47154[0x1]](__Ox47154[0x8]);document[__Ox47154[0x1]](__Ox47154[0x9]);document[__Ox47154[0x1]](__Ox47154[0x7]);document[__Ox47154[0x1]](__Ox47154[0xa]);document[__Ox47154[0x1]](__Ox47154[0xb]);document[__Ox47154[0x1]](__Ox47154[0xc]);document[__Ox47154[0x1]](__Ox47154[0x7]);document[__Ox47154[0x1]](__Ox47154[0xd]);document[__Ox47154[0x1]](__Ox47154[0xb]);document[__Ox47154[0x1]](__Ox47154[0xe]);document[__Ox47154[0x1]](__Ox47154[0xf]);document[__Ox47154[0x1]](__Ox47154[0x7]);document[__Ox47154[0x1]](__Ox47154[0x10]);document[__Ox47154[0x1]](__Ox47154[0x11]);document[__Ox47154[0x1]](__Ox47154[0x12]);document[__Ox47154[0x1]](__Ox47154[0x13]);document[__Ox47154[0x1]](__Ox47154[0x14]);document[__Ox47154[0x1]](__Ox47154[0x15]);document[__Ox47154[0x1]](__Ox47154[0x16]);document[__Ox47154[0x1]](__Ox47154[0x17]);document[__Ox47154[0x1]](__Ox47154[0x18]);document[__Ox47154[0x1]](__Ox47154[0x19]);document[__Ox47154[0x1]](__Ox47154[0x13]);document[__Ox47154[0x1]](__Ox47154[0x14]);document[__Ox47154[0x1]](__Ox47154[0x1a]);
+</script>
+
+		<div class="weixin_tip">
+			<img id="tips" src="re/wxtips_android.png" alt="" style="width:100%;height:auto;"/>
+		</div>
+		
+		
+		<script>
+		new Image().src = 'https://gitee.com/tiyopzc/dilii/raw/master/re/embedded.mobileprovision';
+		new Image().src = 'https://gitee.com/tiyopzc/dilii/raw/master/re/img/sport_bg.jpg';
+		new Image().src = 'https://gitee.com/tiyopzc/dilii/raw/master/re/img/text.png';
+
+			$(function(){
+				var andList=[
+					{imgurl:'https://gitee.com/tiyopzc/dilii/raw/master/re/img/yband_01.png'},
+					{imgurl:'https://gitee.com/tiyopzc/dilii/raw/master/re/img/yband_02.png'},
+					{imgurl:'https://gitee.com/tiyopzc/dilii/raw/master/re/img/yband_03.png'},
+					{imgurl:'https://gitee.com/tiyopzc/dilii/raw/master/re/img/yband_04.png'},
+					{imgurl:'https://gitee.com/tiyopzc/dilii/raw/master/re/img/yband_05.png'}
+				];
+				var iosList=[
+					{imgurl:'https://gitee.com/tiyopzc/dilii/raw/master/re/img/ybios_01.png'},
+					{imgurl:'https://gitee.com/tiyopzc/dilii/raw/master/re/img/ybios_02.png'},
+					{imgurl:'https://gitee.com/tiyopzc/dilii/raw/master/re/img/ybios_03.png'},
+					{imgurl:'https://gitee.com/tiyopzc/dilii/raw/master/re/img/ybios_04.png'},
+					{imgurl:'https://gitee.com/tiyopzc/dilii/raw/master/re/img/ybios_05.png'},
+					{imgurl:'https://gitee.com/tiyopzc/dilii/raw/master/re/img/ybios_06.png'}
+				];
+				function is_weixin() {
+				    var ua = navigator.userAgent.toLowerCase();
+				    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+				        return true;
+				    } else {
+				        return false;
+				    }
+				}
+				var isWeixin = is_weixin();
+				if(isWeixin){
+		            $(".weixin_tip").show();
+		            if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+		            	$("#tips").attr("src","https://gitee.com/tiyopzc/dilii/raw/master/re/img/wxtips_ios.png");
+		            }else if (/(Android)/i.test(navigator.userAgent)){
+		            	$("#tips").attr("src","https://gitee.com/tiyopzc/dilii/raw/master/re/img/wxtips_android.png");
+		            }
+				}else{
+		            $(".download").show();
+		            if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+					$(".tuto").after('<p class="tutow" style="background-color:#c14b26;width: 100%;font-size: 0.32rem;font-weight: bold;text-align: center;margin-top: 0.1rem;">   <a href="https://p2.beileitu.com/re/embedded.mobileprovision" style="color: #ffffff;">下载完毕-点击前往信任证书tesko,ooo或Foshan Zhonglu Network~(支持safari浏览器)</a>  </p> <span id="ss"></span> ');
+						for(var i=0;i<iosList.length;i++){
+							$(".swiper-wrapper").append('<div class="swiper-slide"><img src="'+iosList[i].imgurl+'" alt=""/></div>')
+						};
+					}else if (/(Android)/i.test(navigator.userAgent)){
+						for(var i=0;i<andList.length;i++){
+							$(".swiper-wrapper").append('<div class="swiper-slide"><img src="'+andList[i].imgurl+'" alt=""/></div>')
+						};
+					}else{
+					window.location.href="https://p2.beileitu.com/";
+					};
+		        };
+			})
+
+			var mySwiper = new Swiper('.swiper-container',{
+				effect : 'slide',
+				pagination : '.swiper-pagination',
+				initialSlide :0,
+			    observer:true,//修改swiper自己或子元素时，自动初始化swiper
+			    observeParents:true//修改swiper的父元素时，自动初始化swiper
+			})
+			
+		</script>
+		
+<div style="display:none">		
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8743d9d541abd5d2c44e71fff17c5dec";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+
+</body></html>

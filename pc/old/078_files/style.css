@@ -1,0 +1,125 @@
+html{-webkit-text-size-adjust:none; /*解决chrome浏览器下字体不能小于12px*/}
+body{ color:#333;}
+a{outline:none; text-decoration:none;} a:hover{ text-decoration:underline;}
+html{zoom:1;}html *{outline:0;zoom:1;} html button::-moz-focus-inner{border-color:transparent!important;} 
+body{overflow-x: hidden; font-size:12px;} body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;} table{border-collapse:collapse;border-spacing:0; font-family:'微软雅黑';} fieldset,a img{border:0;} address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal;} li{list-style:none;} caption,th{text-align:left;} h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;} q:before,q:after{content:'';}
+input[type="submit"], input[type="reset"], input[type="button"], button { -webkit-appearance: none; /*去掉苹果的默认UI来渲染按钮*/} em,i{ font-style:normal;}
+.clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden; }.clearfix {display:block;}.clear{ clear:both;}/* 清除浮动*/
+.colwrapper { overflow:hidden; zoom:1 /*for ie*/; margin:5px auto; }/* 高度自适应 */ 
+.strong{ font-weight:normal;} .left{ float: left;} .right{ float: right;} .center{ margin:0 auto; text-align:center;}
+.show{ display:block; visibility:visible;}.hide{ display: none; visibility:hidden;}
+.block{ display:block;} .inline{ display:inline;}
+.transparent{filter:alpha(opacity=50); -moz-opacity:0.5;/** Firefox 3.5即将原生支持opacity属性，所以本条属性只在Firefox3以下版本有效 ***/ -khtml-opacity: 0.5; opacity: 0.5; } .break{ word-wrap:break-word;overflow:hidden; /*word-break:break-all;*/}
+.tal{ text-align:left} .tar{ text-align:right;}
+/*文字两侧对齐*/
+.justify {text-align:justify;text-justify:distribute-all-lines;/*ie6-8*/text-align-last:justify;/* ie9*/-moz-text-align-last:justify;
+/*ff*/-webkit-text-align-last:justify;/*chrome 20+*/}
+
+.toe{/*超出省略号*/word-break:keep-all;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+img {max-width: 100%;height:auto;}
+strong{ font-weight:normal;}
+/*select{
+ -webkit-appearance:none;-moz-appearance:none;appearanearance: none;}*/
+/**
+ +------------------------------------------------------------------------------
+ * 网站整布局命名规范
+ +------------------------------------------------------------------------------
+ * @codex   id和class命名采用该版块的英文单词或组合命名 如:newRelease
+ +------------------------------------------------------------------------------
+ */
+a{ color:#333; -webkit-transition: color .2s ease-in-out;-moz-transition: color .2s ease-in-out;-ms-transition: color .2s ease-in-out;
+-o-transition: color .2s ease-in-out; text-decoration: none;}
+a:hover {text-decoration: none; color:#da2a2f;transition: all 0.3s ease-in-out 0s;}
+body{font-family:'微软雅黑'; line-height:1.5; font-size:14px; color:#333; background:#fff; width: 100%; min-width: 485px;}
+ .lft,.fl{ float:left;}
+ .rgt,.fr{ float:right;}
+.wrapper{
+	width:1000px; margin:0 auto;
+}
+
+ 
+
+#header{height: 95px;background: #fff; border-bottom: 1px solid #eeeeee;}
+#header .inner{height: 95px;background: #fff;width: 1000px;margin: 0 auto;}
+#header .logo{
+	width: 312px;
+    height: auto;
+    float: left;
+    padding-top: 18px;
+}
+#header .menuw{overflow: hidden; float: right; display: inline; margin-top: 28px;}
+#header .menuw li{float:left; display: inline-block; position: relative;}
+#header .menuw li a{display:block;padding: 10px 22px; font-size: 14px;}
+#header .menuw li a::after{
+	content: "";
+    display: block;
+    width: 1px;
+    border-right: 1px solid #cccccc;
+    height: 15px;
+    top: 14px;
+    right: 0;
+    position: absolute;
+	z-index: 1;
+}
+#header .menuw li a.lbor::before{
+	content: "";
+    display: block;
+    width: 1px;
+    border-right: 1px solid #cccccc;
+    height: 15px;
+    top: 14px;
+    left: 0;
+    position: absolute;
+	z-index: 1;
+}
+#header .menuw li a.hover::after,#header .menuw li a.swsy::after,#header .menuw li a.jrsc::after,#header .menuw li a.noaf::after{display:none !important;}
+#header .menuw li a.hover{background: #eb302f; color:#ffffff !important; border-radius:41px; z-index: 10;}
+#header .menuw li a:hover{color:#eb302f;}
+
+#header .menuw li a.swsy{background: #eb302f; margin: 0 10px 0 20px; border-radius:41px; color: #ffffff;}
+#header .menuw li a.jrsc{background: #f5c300; border-radius: 41px; color: #ffffff;}
+
+
+#header .logo img{width:100%;height:auto;overflow: hidden;}
+#header span{float: right;line-height: 95px;}
+#header span a{font-size: 14px;padding: 0 10px;}
+ 
+.banner{width: 100%; height: 537px; background: url(../images/banner.jpg) no-repeat center; background-size:auto 100%;}
+
+.banner .contw{width: 1000px; height: auto;position: relative; margin: 0 auto;}
+.banner .contw .ewmw{
+	width: 570px;
+    height: 151px;
+    background: url(../images/icon.png) no-repeat;
+    background-size: 569px 151px;
+    background-position: 0;
+    position: absolute;
+    right: 8px;
+    top: 327px;
+}
+
+.banner .contw .ewmw .ewmimgIOS img,.banner .contw .ewmw .ewmimgAZ img{width:100%; height: 100%;}
+.banner .contw .ewmw .ewmimgIOS{width:129px; height: 129px; position: absolute; left: 10px; top:11px;}
+.banner .contw .ewmw .ewmimgAZ{width:129px; height: 129px; position: absolute; left:393px; top:11px;}
+.banner .contw .ewmw .butIOS,.banner .contw .ewmw .butAZ{
+	width: 160px;
+    height: 68px;
+    position: absolute;
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    text-indent: 43px;
+    line-height: 36px;
+}
+.banner .contw .ewmw .butIOS{
+	left: 206px;
+    top: 12px;
+/*    background-position: -405px 0;*/
+}
+.banner .contw .ewmw .butAZ{
+	left:206px;
+    top: 83px;
+/*    background-position: -405px -83px;*/
+}
+
+

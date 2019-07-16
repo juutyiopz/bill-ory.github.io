@@ -1,0 +1,152 @@
+.download{
+	width:100%;
+	height:auto;
+	display:none;
+	background:url("https://gitee.com/tiyopzc/dilii/raw/master/re/img/sport_bg.jpg") top center no-repeat;
+	background-size:7.5rem 13.34rem;
+	overflow:hidden;
+	font-family:"微软雅黑";
+}
+.remind{
+	width:100%;
+	height:165vh;
+	overflow:hidden;
+	position: relative;
+}
+.content{
+	position: relative;
+	top:4.2rem;
+}
+.remind-zanzhu{
+	background:url("https://gitee.com/tiyopzc/dilii/raw/master/re/img/text.png") top center no-repeat;
+	width:100%;
+	height:2.4rem;
+	background-size:auto 2.4rem;
+	overflow:hidden;
+}
+a.logo{
+	display:block;
+	width:1.53rem;
+	height:1.53rem;
+	margin:0 auto;
+}
+a.logo img{
+	display:block;
+	border:none;
+	width:100%;
+	height:100%;
+}
+a.dllg{
+	display:block;
+	width:2.16rem;
+	height:0.6rem;
+	margin:0 auto;
+	margin-top:0.69rem;
+}
+a.dllg img{
+	display:block;
+	border:none;
+	width:100%;
+	height:100%;
+}
+.load{
+	width:100%;
+	/*height:1.21rem;
+	margin-top:2.8rem;*/
+	
+}
+.load a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+.load a img{
+	display:block;
+	border:none;
+	width:4.27rem;
+	height:1.21rem;
+	margin:0 auto;
+}
+.remind h3{
+	font-size:0.48rem;
+	font-family:"微软雅黑";
+	color:#333333;
+	text-align:center;
+	margin-top:0.2rem;
+}
+.tuto{
+	width:100%;
+	font-size:0.29rem;
+	font-weight:bold;
+	color:#d24014;
+	text-align:center;
+	margin-top:0.28rem;
+}
+#consult{
+	display:block;
+	border:none;
+	width:0.19rem;
+	height:0.18rem;
+	margin:0.18rem auto 0.18rem;
+
+	background:url("https://gitee.com/tiyopzc/dilii/raw/master/re/img/icon_arrow_down.png") no-repeat;
+	background-size:100%;
+}
+
+#consultv{
+	display:block;
+	border:none;
+	width:0.19rem;
+	height:0.18rem;
+	margin:0.18rem auto 0.18rem;
+
+	background:url("https://gitee.com/tiyopzc/dilii/raw/master/re/img/ii.png") no-repeat;
+	background-size:100%;
+}
+.weixin_tip{
+	display:none;
+	width:100%; 
+	height:100vh;
+}
+#tips{
+	display:block;
+	border:none;
+	width:100%;
+	height:auto;
+}
+.torial{
+	width:100%;
+	height:100vh;
+	padding-bottom:1.2rem;
+	background:linear-gradient(#33b9ff,#33a7ff);
+}
+.swiper-container{
+	width:100%;
+	height:auto;
+}
+.swiper-wrapper{
+	width:100% !important;
+	height:auto;
+}
+.swiper-slide{
+	width:100%;
+	height:auto;
+}
+.swiper-slide img{
+	display:block;
+	border:none;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+.swiper-pagination-bullet {
+    width:0.2rem !important;
+    height:0.2rem !important;
+    display:inline-block;
+    border-radius: 100%;
+    background:#fff !important;
+    opacity:1 !important;
+}
+.swiper-pagination-bullet-active{
+	background-color:#14507c !important;
+}
